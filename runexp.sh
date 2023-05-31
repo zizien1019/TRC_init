@@ -39,6 +39,8 @@ ln -s ${inputdir}/other/flux-forced/mask/* .
 ln -s ${inputdir}/other/flux-forced/state_weekly/* .
 ln -s ${inputdir}/other/flux-forced/xx/* .
 
+ln -s ${basedir}/TRC_init/TRC* .
+
 cp -p ../build_trc/mitgcmuv .
 
 mpiexec -np ${nprocs} ./mitgcmuv > a.log
