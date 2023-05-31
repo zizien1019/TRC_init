@@ -25,7 +25,6 @@ set basedir = scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/rele
 set inputdir = scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing
 
 endif
-mkdir ${basedir}/run_trc
 cd ${basedir}/run_trc
 ln -s ${basedir}/namelist_offline_ptracer/* .
 
