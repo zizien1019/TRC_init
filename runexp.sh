@@ -22,20 +22,20 @@ module list
 
 set nprocs = 96
 
-cd scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/run_trc
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/namelist_offline_ptracer/* .
+cd /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/run_trc
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/namelist_offline_ptracer/* .
 
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/error_weight/data_error/* .
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/error_weight/data_error/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/* .
 rm -rf NAMELIST
 
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing/* .
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing_weekly/* .
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/mask/* .
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/state_weekly/* .
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/xx/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing_weekly/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/mask/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/state_weekly/* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/xx/* .
 
-ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/TRC_init/TRC* .
+ln -s /scratch/yulinpan_root/yulinpan98/zizien/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/TRC_init/TRC* .
 
 cp -p ../build_trc/mitgcmuv .
 
