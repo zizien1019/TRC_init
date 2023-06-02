@@ -21,24 +21,21 @@ module load netcdf-fortran
 module list
 
 set nprocs = 96
-set basedir = scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced
-set inputdir = scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing
 
-endif
-cd ${basedir}/run_trc
-ln -s ${basedir}/namelist_offline_ptracer/* .
+cd scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/run_trc
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/namelist_offline_ptracer/* .
 
-ln -s ${inputdir}/input_init/error_weight/data_error/* .
-ln -s ${inputdir}/input_init/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/error_weight/data_error/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/input_init/* .
 rm -rf NAMELIST
 
-ln -s ${inputdir}/other/flux-forced/forcing/* .
-ln -s ${inputdir}/other/flux-forced/forcing_weekly/* .
-ln -s ${inputdir}/other/flux-forced/mask/* .
-ln -s ${inputdir}/other/flux-forced/state_weekly/* .
-ln -s ${inputdir}/other/flux-forced/xx/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/forcing_weekly/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/mask/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/state_weekly/* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/forcing/other/flux-forced/xx/* .
 
-ln -s ${basedir}/TRC_init/TRC* .
+ln -s scratch/yulinpan_root/yulinpan98/ziizen/WORKDIR/MITgcm/ECCOV4/release4/flux-forced/TRC_init/TRC* .
 
 cp -p ../build_trc/mitgcmuv .
 
